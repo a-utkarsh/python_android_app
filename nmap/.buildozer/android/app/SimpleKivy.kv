@@ -1,0 +1,41 @@
+<scan>:
+    BoxLayout
+        id: scan_layout
+        orientation: 'vertical'
+        padding: [10,50,10,50]
+        spacing: 50
+
+        Label:
+            text: 'Welcome to NMAP'
+            font_size: 32
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            Label:
+                text: 'Target IP address'
+                font_size: 18
+                halign: 'left'
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: target
+                multiline:False
+                font_size: 28
+
+        BoxLayout:
+            orientation: 'vertical'
+            Label:
+                text: 'Range'
+                halign: 'left'
+                font_size: 18
+                text_size: root.width-20, 20
+
+            TextInput:
+                id: range
+                multiline:False
+                font_size: 28
+
+        Button:
+            text: 'SCAN'
+            font_size: 20
